@@ -7,7 +7,10 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import CreateDeck from './components/CreateDeck';
 import ReviewDeck from './pages/ReviewDeck';
-
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 function App() {
   return (
     <Router>
@@ -20,6 +23,10 @@ function App() {
           <Route path="/home" element={<Home/>} />
           <Route path="/create-deck" element={<CreateDeck/>}/>
           <Route path="/review-deck" element={<ReviewDeck/>}/>
+          <Route path="/about-us" element={<AboutUs/>}/>
+          <Route path="/contact-us" element={<ContactUs/>}/>
+          <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
+          <Route path="/terms" element={<TermsOfService/>}/>
         </Routes>
       </div>
     </Router>

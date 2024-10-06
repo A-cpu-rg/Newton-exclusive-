@@ -57,7 +57,6 @@ function CreateDeck() {
             <div className="flex flex-col p-6 shadow-lg rounded-lg w-full md:w-2/3 lg:w-1/2 mx-auto mt-10 bg-white bg-opacity-10">
                 <h2 className="text-2xl font-mono text-center mb-6 text-gray-700">Create New Deck</h2>
 
-                {/* Deck Title */}
                 <input
                     type="text"
                     placeholder="Enter Deck Title"
@@ -68,7 +67,6 @@ function CreateDeck() {
                     aria-label="Deck Title"
                 />
 
-                {/* Deck Description */}
                 <textarea
                     placeholder="Enter Deck Description"
                     value={deckDescription}
@@ -77,7 +75,6 @@ function CreateDeck() {
                     aria-label="Deck Description"
                 />
 
-                {/* Flashcard Input */}
                 <div className="flex flex-col md:flex-row gap-4 mb-4">
                     <input
                         type="text"
@@ -99,7 +96,6 @@ function CreateDeck() {
                     />
                 </div>
 
-                {/* Tags Input */}
                 <input
                     type="text"
                     placeholder="Tags (comma separated)"
@@ -109,7 +105,6 @@ function CreateDeck() {
                     aria-label="Flashcard Tags"
                 />
 
-                {/* Add/Update Button */}
                 <button
                     onClick={addFlashcard}
                     className="bg-blue-500 font-mono text-white py-2 px-6 rounded-md hover:bg-blue-600 transition-all"
@@ -117,7 +112,6 @@ function CreateDeck() {
                     {editIndex !== null ? 'Update Flashcard' : 'Add Flashcard'}
                 </button>
 
-                {/* Flashcard Preview */}
                 <div className="mt-4">
                     {flashcards.length > 0 && (
                         <h3 className="text-xl font-mono text-gray-600 mb-2">Flashcards Preview:</h3>
@@ -150,7 +144,6 @@ function CreateDeck() {
                     </div>
                 </div>
 
-                {/* Save Deck Button */}
                 <button
                     onClick={saveDeck}
                     className="bg-green-500 font-mono text-white py-3 mt-6 rounded-md hover:bg-green-600 transition-all"
